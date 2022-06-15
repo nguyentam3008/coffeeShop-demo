@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/sass/blog.scss" />
+    <link rel="stylesheet" href="../../assets/sass/blog.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>CoffeeShop</title>
+  </head>
+  <body>
+    <div class="overplay"></div>
+    <div id="root">
+      <header>
+        <nav class="nav">
+          <a href="../../index.html" class="nav-logo">CoffeeShop.</a>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="../../index.html" class="nav-menu-link active-nav"
+                >Home</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="../../assets/html/Outmenu.html" class="nav-menu-link"
+                >Products</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="../../assets/html/about.html" class="nav-menu-link"
+                >About</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="../../assets/html/blog.html" class="nav-menu-link"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="../../assets/html/formLogin.html" class="nav-menu-link"
+                >SingIn</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="../../assets/html/contact.html" class="nav-menu-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="nav-sping">
+            <div class="nav-text">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <a href="#" class="nav-menu-link" id="cart-icon"> cart </a>
+              <div class="box-number">
+                <span class="number">0</span>
+              </div>
+            </div>
+          </ul>
+          <div class="nav-hamberger"></div>
+        </nav>
+        <div class="cart">
+          <div class="cart-box">
+            <h4 class="cart-title">Your Cart</h4>
+            <i class="fa-solid fa-xmark" id="cart-lose"></i>
+          </div>
+          <div class="cart-group">
+            <!-- render product in cart -->
+            <div class="cart-product">
+              <div class="cart-img">
+                <img src="../../assets/img/more0.jpg" alt="" />
+              </div>
+              <div class="cart-desc">
+                <p class="cart-name">Golden Designers Mug</p>
+                <p class="cart-price">$ 25 USD</p>
+                <p class="cart-delete">Remove</p>
+              </div>
+              <div class="cart-input">
+                <div class="cart-quantity"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total">
+            <div class="cart-total-title">Subtotal:</div>
+            <button class="cart-btn">Continue to checkout</button>
+          </div>
+        </div>
+      </header>
+      <!-- ==========================END HEADER===================================== -->
+      <!-- ============================BLOG============================= -->
+      <div class="blog-wrapper">
+        <section class="blog">
+          <div class="container-product">
+            <div class="blog-header">
+              <h1 class="blog-title">Read coffee stories on our Blog</h1>
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
+              </p>
+            </div>
+            <h3 class="title-center">FEATURED POSTS</h3>
+            <div class="blog-list">
+              <div class="blog-product">
+                <div class="blog-img">
+                  <img src="../../assets/img/cfshop1.jpg" alt="coffee shop" />
+                  <a href="#" class="blog-img-read">read the full story</a>
+                </div>
+                <div class="blog-desc">
+                  <p class="blog-title-secound">
+                    Recent research suggests that heavy coffee drinkers may reap
+                    health benefits.
+                  </p>
+                  <p class="blog-text">
+                    It is a paradisematic country, in which roasted parts of
+                    sentences fly into your mouth.
+                  </p>
+                  <p class="blog-date">May 6, 2022</p>
+                </div>
+              </div>
+              <div class="blog-product">
+                <div class="blog-img">
+                  <img src="../../assets/img/cfshop3.jpg" alt="coffee shop" />
+                  <a href="#" class="blog-img-read">read the full story</a>
+                </div>
+                <div class="blog-desc">
+                  <p class="blog-title-secound">
+                    How long does a cup of coffee keep you awake?
+                  </p>
+                  <p class="blog-text">
+                    It is a paradisematic country, in which roasted parts. Vel
+                    qui et ad voluptatem.
+                  </p>
+                  <p class="blog-date">May 6, 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="last">
+          <div class="container-product">
+            <div class="last-header">Latest Posts</div>
+            <div class="last-wrapper">
+              <div class="last-list">
+                <div class="last-product">
+                  <div class="last-img">
+                    <img src="../../assets/img/last0.jpg" alt="coffee shop" />
+                    <a href="#" class="last-img-read">read the full story</a>
+                  </div>
+                  <div class="last-desc">
+                    <p class="last-title-secound">
+                      Recent research suggests that heavy coffee drinkers may
+                      reap health benefits.
+                    </p>
+                    <p class="last-text">
+                      It is a paradisematic country, in which roasted parts of
+                      sentences fly into your mouth.
+                    </p>
+                    <p class="last-date">May 6, 2022</p>
+                  </div>
+                </div>
+                <div class="last-product">
+                  <div class="last-img">
+                    <img src="../../assets/img/last1.jpg" alt="coffee shop" />
+                    <a href="#" class="last-img-read">read the full story</a>
+                  </div>
+                  <div class="last-desc">
+                    <p class="last-title-secound">
+                      Recent research suggests that heavy coffee drinkers may
+                      reap health benefits.
+                    </p>
+                    <p class="last-text">
+                      It is a paradisematic country, in which roasted parts of
+                      sentences fly into your mouth.
+                    </p>
+                    <p class="last-date">May 6, 2022</p>
+                  </div>
+                </div>
+                <div class="last-product">
+                  <div class="last-img">
+                    <img src="../../assets/img/last2.jpg" alt="coffee shop" />
+                    <a href="#" class="last-img-read">read the full story</a>
+                  </div>
+                  <div class="last-desc">
+                    <p class="last-title-secound">
+                      Recent research suggests that heavy coffee drinkers may
+                      reap health benefits.
+                    </p>
+                    <p class="last-text">
+                      It is a paradisematic country, in which roasted parts of
+                      sentences fly into your mouth.
+                    </p>
+                    <p class="last-date">May 6, 2022</p>
+                  </div>
+                </div>
+                <div class="last-product">
+                  <div class="last-img">
+                    <img src="../../assets/img/last3.jpg" alt="coffee shop" />
+                    <a href="#" class="last-img-read">read the full story</a>
+                  </div>
+                  <div class="last-desc">
+                    <p class="last-title-secound">
+                      Recent research suggests that heavy coffee drinkers may
+                      reap health benefits.
+                    </p>
+                    <p class="last-text">
+                      It is a paradisematic country, in which roasted parts of
+                      sentences fly into your mouth.
+                    </p>
+                    <p class="last-date">May 6, 2022</p>
+                  </div>
+                </div>
+                <div class="last-product">
+                  <div class="last-img">
+                    <img src="../../assets/img/last4.jpg" alt="coffee shop" />
+                    <a href="#" class="last-img-read">read the full story</a>
+                  </div>
+                  <div class="last-desc">
+                    <p class="last-title-secound">
+                      Recent research suggests that heavy coffee drinkers may
+                      reap health benefits.
+                    </p>
+                    <p class="last-text">
+                      It is a paradisematic country, in which roasted parts of
+                      sentences fly into your mouth.
+                    </p>
+                    <p class="last-date">May 6, 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about">
+                <div class="about-header">
+                  <h3 class="about-title">CoffeeStyle.</h3>
+                  <p class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique.
+                  </p>
+                  <a href="#" class="about-hef">Read the full Story</a>
+                </div>
+                <h3 class="last-header">Categories</h3>
+                <div class="about-category">
+                  <a href="#">Barista</a>
+                  <a href="#">Coffee</a>
+                  <a href="#">Lifestyle</a>
+                  <a href="#">Mugs</a>
+                </div>
+                <h3 class="last-header">Author</h3>
+                <div class="about-author">
+                  <div class="about-author-box">
+                    <a href="">
+                      <img src="../../assets/img/face0.jpg" alt="" />
+                    </a>
+                    <a href="#">Fred Gleason</a>
+                  </div>
+                  <div class="about-author-box">
+                    <a href="">
+                      <img src="../../assets/img/face1.jpg" alt="" />
+                    </a>
+                    <a href="#">Isabel Hamill</a>
+                  </div>
+                  <div class="about-author-box">
+                    <a href="">
+                      <img src="../../assets/img/face2.jpg" alt="" />
+                    </a>
+                    <a href="#">Maurice Herman</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-something">
+              <p class="about-something-content">
+                "I wake up some mornings and sit and have my coffee and look out
+                at my beautiful garden, and I go, ’Remember how good this is.
+                Because you can lose it."
+              </p>
+              <p class="about-something-author">
+                JASON JOHNSON - OWNER OF COFFEESTYLE
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ============================END BLOG============================= -->
+
+      <!-- ============================SING UP=========================================== -->
+      <section class="signup" data-aos="fade-up">
+        <div class="container">
+          <div class="signup-box">
+            <div class="signup-text">
+              <h3 class="signup-more">SIGN UP AND GET FREE COFFEE BAGS</h3>
+              <h2 class="signup-title">CoffeeShop updates</h2>
+            </div>
+            <form name="" action="#" class="signup-input">
+              <input type="text" placeholder="CUSTOMER@HSWTT1912.OI" />
+              <button class="signup-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ============================END SING UP=========================================== -->
+      <!-- =======================FOOTER====================================== -->
+      <footer class="footer" data-aos="fade-up">
+        <div class="container-product">
+          <div class="footer-box">
+            <div class="footer-col">
+              <p class="footer-title fz">CoffeeShop</p>
+              <p class="footer-content">SINCE 2022</p>
+              <p class="footer-since pd">CoffeeShopStyle Inc. © 2022</p>
+            </div>
+            <ul class="footer-col">
+              <h4 class="footer-title">Menu</h4>
+              <li class="footer-item">
+                <a href="#" class="footer-link"></a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Products</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">About</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">StyleGuide</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="footer-col">
+              <h4 class="footer-title">Follow Us</h4>
+
+              <li class="footer-item">
+                <a
+                  href="https://www.facebook.com/trong.nhan.3557440"
+                  class="footer-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Instagram</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Pinterest</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Twitter</a>
+              </li>
+            </ul>
+            <div class="footer-col">
+              <h4 class="footer-title">Contact.</h4>
+              <p class="footer-content">We’re Always Happy to Help</p>
+              <div class="footer-email">vn@hstt1912.oi</div>
+              <p class="footer-since">Powered by Webflow</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- =======================END FOOTER====================================== -->
+    <script src="../../assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

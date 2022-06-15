@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/sass/index.scss" />
+    <link rel="stylesheet" href="./assets/sass/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>CoffeeShop</title>
+  </head>
+  <body>
+    <div class="overplay"></div>
+    <div id="root">
+      <header>
+        <nav class="nav">
+          <a href="./index.html" class="nav-logo">CoffeeShop.</a>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="./index.html" class="nav-menu-link active-nav">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./assets/html/Outmenu.html" class="nav-menu-link"
+                >Products</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="./assets/html/about.html" class="nav-menu-link">About</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./assets/html/blog.html" class="nav-menu-link">Blog</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./assets/html/formLogin.html" class="nav-menu-link"
+                >SignIn</a
+              >
+            </li>
+            <li class="nav-menu-item">
+              <a href="./assets/html/contact.html" class="nav-menu-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="nav-sping">
+            <div class="nav-text">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <a href="#" class="nav-menu-link" id="cart-icon"> cart </a>
+              <div class="box-number">
+                <span class="number">0</span>
+              </div>
+            </div>
+          </ul>
+          <div class="nav-hamberger"></div>
+        </nav>
+        <div class="cart">
+          <div class="cart-box">
+            <h4 class="cart-title">Your Cart</h4>
+            <i class="fa-solid fa-xmark" id="cart-lose"></i>
+          </div>
+          <div class="cart-group">
+            <!-- render product in cart -->
+            <div class="cart-product">
+              <div class="cart-img">
+                <img src="./assets/img/more0.jpg" alt="" />
+              </div>
+              <div class="cart-desc">
+                <p class="cart-name">Golden Designers Mug</p>
+                <p class="cart-price">$ 25 USD</p>
+                <p class="cart-delete">Remove</p>
+              </div>
+              <div class="cart-input">
+                <div class="cart-quantity"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total">
+            <div class="cart-total-title">Subtotal:</div>
+            <button class="cart-btn">Continue to checkout</button>
+          </div>
+        </div>
+      </header>
+      <!-- ==========================END HEADER===================================== -->
+
+      <!-- ============================================BANER==============================-->
+      <section class="banner">
+        <div class="banner-container">
+          <div class="banner-box">
+            <div class="banner-img">
+              <div class="banner-desc">
+                <p class="banner-text-primary">best place to buy design</p>
+                <p class="banner-title">Coffee Mugs</p>
+                <p class="banner-text-secound">
+                  The most versatile furniture system ever created. Designed to
+                  fit your life, made to move and grow.
+                </p>
+                <button class="banner-btn">explore our products</button>
+              </div>
+            </div>
+            <div class="banner-infor">
+              <p class="banner-infor-primary">
+                Even the all-powerful Pointing has no control about the blind
+                texts.
+              </p>
+              <p class="banner-infor-secound">
+                It is a paradisematic country, in which roasted parts of
+                sentences fly into your mouth. Even the all-powerful Pointing
+                has no control about the blind texts it is an almost
+                unorthographic life One day however a small line of blind text
+                by the name of Lorem Ipsum decided to leave for the far World of
+                Grammar.
+              </p>
+              <div class="banner-infor-tos">
+                <a href="#" class="banner-infor-link">Read the full Story</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================END BANER============================= -->
+
+      <!-- =========================FEATURE MUGS========================== -->
+      <section class="featured" data-aos="fade-up">
+        <div class="container-product">
+          <h3 class="title-center">FEATURED MUGS</h3>
+          <div class="faetured-box">
+            <div class="featured-lists">
+              <!-- render product here -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================END FEATURE MUGS========================== -->
+      <!-- ===========================MORE PRODUCtS============================ -->
+      <section class="more" data-aos="fade-up">
+        <div class="container-product">
+          <h3 class="title-center">More products</h3>
+          <div class="more-lists">
+            <!-- render product -->
+          </div>
+        </div>
+      </section>
+      <!-- ===========================ENDMORE PRODUCtS============================ -->
+      <!--================================= MAGAZINE=============================================-->
+      <section class="magazine" data-aos="fade-up">
+        <div class="container-product">
+          <h3 class="title-center">BUY 2 MUGS AND GET A Food MAGAZINE FREE</h3>
+          <div class="magazine-box">
+            <div class="magazine-img">
+              <div class="magazine-img-item">
+                <img src="./assets/img/str0.jpg" alt="" />
+              </div>
+              <div class="magazine-img-item">
+                <img src="./assets/img/str1.jpg" alt="" />
+              </div>
+              <div class="magazine-img-item">
+                <img src="./assets/img/str2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="magazine-desc">
+              <p class="magazine-text">PREMIUM OFFER</p>
+              <h3 class="magazine-title">Get out Magazine</h3>
+              <h3 class="magazine-content">
+                The most versatile furniture system ever created. Designed to
+                fit your life.
+              </h3>
+              <div class="magazine-tos">
+                <a href="#" class="magazine-btn">start shopping</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================================= MAGAZINE=============================================-->
+      <!-- ==========================BG_FIXED======================== -->
+      <div class="bg-fixed-img"></div>
+      <!-- ==========================END BG_FIXED======================== -->
+      <!-- =====================================STORIES=============================== -->
+      <section class="stories" data-aos="fade-up">
+        <div class="container-product">
+          <h3 class="title-center">LIFESTYLE STORIES</h3>
+          <div class="stories-list">
+            <div class="stories-product">
+              <div class="stories-img">
+                <img src="./assets/img/cfshop1.jpg" alt="coffee shop" />
+                <a href="./assets/html/blog.html" class="stories-img-read"
+                  >read the full story</a
+                >
+              </div>
+              <div class="stories-desc">
+                <p class="stories-blog">
+                  Health Check: why do I get a headache when I haven’t had my
+                  coffee?
+                </p>
+                <p class="stories-text">
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+                <p class="stories-date">May 6, 2022</p>
+              </div>
+            </div>
+            <div class="stories-product">
+              <div class="stories-img">
+                <img src="./assets/img/cfshop2.jpg" alt="coffee shop" />
+                <a href="./assets/html/blog.html" class="stories-img-read"
+                  >read the full story</a
+                >
+              </div>
+              <div class="stories-desc">
+                <p class="stories-blog">
+                  How long does a cup of coffee keep you awake?
+                </p>
+                <p class="stories-text">
+                  It is a paradisematic country, in which roasted parts. Vel qui
+                  et ad voluptatem.
+                </p>
+                <p class="stories-date">May 6, 2022</p>
+              </div>
+            </div>
+            <div class="stories-product">
+              <div class="stories-img">
+                <img src="./assets/img/cfshop3.jpg" alt="coffee shop" />
+                <a href="./assets/html/blog.html" class="stories-img-read"
+                  >read the full story</a
+                >
+              </div>
+              <div class="stories-desc">
+                <p class="stories-blog">
+                  Recent research suggests that heavy coffee drinkers may reap
+                  health benefits.
+                </p>
+                <p class="stories-text">
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+                <p class="stories-date">May 6, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =====================================END STORIES=============================== -->
+      <!-- ============================SING UP=========================================== -->
+      <section class="signup" data-aos="fade-up">
+        <div class="container">
+          <div class="signup-box">
+            <div class="signup-text">
+              <h3 class="signup-more">SIGN UP AND GET FREE COFFEE BAGS</h3>
+              <h2 class="signup-title">CoffeeShop updates</h2>
+            </div>
+            <form name="" action="#" class="signup-input">
+              <input type="text" placeholder="CUSTOMER@HSWTT1912.OI" />
+              <button class="signup-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ============================END SING UP=========================================== -->
+      <!-- =======================FOOTER====================================== -->
+      <footer class="footer" data-aos="fade-up">
+        <div class="container-product">
+          <div class="footer-box">
+            <div class="footer-col">
+              <p class="footer-title fz">CoffeeShop</p>
+              <p class="footer-content">SINCE 2022</p>
+              <p class="footer-since pd">CoffeeShopStyle Inc. © 2022</p>
+            </div>
+            <ul class="footer-col">
+              <h4 class="footer-title">Menu</h4>
+              <li class="footer-item">
+                <a href="#" class="footer-link"></a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Products</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">About</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">StyleGuide</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="footer-col">
+              <h4 class="footer-title">Follow Us</h4>
+
+              <li class="footer-item">
+                <a
+                  href="https://www.facebook.com/trong.nhan.3557440"
+                  class="footer-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Instagram</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Pinterest</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Twitter</a>
+              </li>
+            </ul>
+            <div class="footer-col">
+              <h4 class="footer-title">Contact.</h4>
+              <p class="footer-content">We’re Always Happy to Help</p>
+              <div class="footer-email">vn@hstt1912.oi</div>
+              <p class="footer-since">Powered by Webflow</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- =======================END FOOTER====================================== -->
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/ProductFeatured.js"></script>
+    <script src="./assets/js/renderMoreProduct.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
