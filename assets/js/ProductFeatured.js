@@ -16,10 +16,6 @@ const productFeatured = [
   },
 ];
 
-window.addEventListener("DOMContentLoaded", () => {
-  renderProductFeatured(productFeatured);
-});
-
 function renderProductFeatured() {
   productFeatured.forEach((product) => {
     const teamplate = `
@@ -40,3 +36,5 @@ function renderProductFeatured() {
     featuredElement.insertAdjacentHTML("beforeend", teamplate);
   });
 }
+
+featuredElement && renderProductFeatured();

@@ -73,11 +73,9 @@ const productMore = [
     price: 29,
   },
 ];
-window.addEventListener("DOMContentLoaded", () => {
-  renderMoreProduct(productMore);
-});
-function renderMoreProduct(item) {
-  item.forEach((product) => {
+
+function renderMoreProduct() {
+  productMore.forEach((product) => {
     const template = `
              <div class="more-product">
                   <div class="more-img">
@@ -95,4 +93,4 @@ function renderMoreProduct(item) {
     productMoreElement.insertAdjacentHTML("beforeend", template);
   });
 }
-renderMoreProduct();
+productMoreElement && renderMoreProduct();

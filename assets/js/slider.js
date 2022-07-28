@@ -34,10 +34,6 @@ const sliders = [
   },
 ];
 
-window.addEventListener("DOMContentLoaded", () => {
-  showSlider(sliders);
-});
-
 const showSlider = () => {
   const item = sliders[currentIndex];
   title.textContent = item.text;

@@ -143,9 +143,13 @@ const productFilterMenu = [
   },
 ];
 
-window.addEventListener("DOMContentLoaded", () => {
+if (menuElement) {
   displayMenu(productFilterMenu);
-});
+  addToCart();
+  updateCart();
+  renderCartItem();
+  renderSubTotal();
+}
 
 function displayMenu(menuItem) {
   let displayMenu = menuItem.map((product) => {
