@@ -1,0 +1,33 @@
+@mixin flexCt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin heading {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin text-nav {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+}
+@mixin textContent {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}

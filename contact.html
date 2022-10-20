@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <title>product</title>
+  </head>
+  <body class="contact-page">
+    <!-- =================nav============================== -->
+    <div class="overplay"></div>
+    <header>
+      <nav class="nav">
+        <a href="./index.html" class="nav-logo">CoffeeShop.</a>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="./index.html" class="nav-menu-link active-nav">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./Outmenu.html" class="nav-menu-link">Products</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./about.html" class="nav-menu-link">About</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./blog.html" class="nav-menu-link">Blog</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./formLogin.html" class="nav-menu-link">SignIn</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./contact.html" class="nav-menu-link">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav-sping">
+          <div class="nav-text">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="#" class="nav-menu-link" id="cart-icon"> cart </a>
+            <div class="box-number">
+              <span class="number">0</span>
+            </div>
+          </div>
+        </ul>
+        <div class="nav-hamberger"></div>
+      </nav>
+      <div class="cart">
+        <div class="cart-box">
+          <h4 class="cart-title">Your Cart</h4>
+          <i class="fa-solid fa-xmark" id="cart-lose"></i>
+        </div>
+        <div class="cart-group">
+          <!-- render product in cart -->
+          <div class="cart-product">
+            <div class="cart-img">
+              <img src="./assets/img/more0.jpg" alt="" />
+            </div>
+            <div class="cart-desc">
+              <p class="cart-name">Golden Designers Mug</p>
+              <p class="cart-price">$ 25 USD</p>
+              <p class="cart-delete">Remove</p>
+            </div>
+            <div class="cart-input">
+              <div class="cart-quantity"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total">
+          <div class="cart-total-title">Subtotal:</div>
+          <button class="cart-btn">Continue to checkout</button>
+        </div>
+      </div>
+    </header>
+    <!-- ====================================CONNECT========================= -->
+    <section class="connect">
+      <div class="container-product">
+        <div class="connect-header">
+          <h3 class="connect-header-title">Let's Connect</h3>
+          <p class="connect-header-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis.
+          </p>
+        </div>
+        <div class="title-center">OUR OFFICES</div>
+        <div class="connect-list">
+          <div class="connect-address">
+            <div class="connect-img">
+              <img src="../../assets/img/connect0.jpg" alt="" />
+              <div class="connect-desc">
+                <div class="connect-kingdom">
+                  <h4 class="connect-kingdom-title">UNITED KINGDOM</h4>
+                  <p class="connect-kingdom-text">Canary Wharf, London</p>
+                  <p class="connect-kingdom-content">Jubilee Place</p>
+                  <p class="connect-kingdom-content">London</p>
+                  <p class="connect-kingdom-content">E14 5NY</p>
+                </div>
+                <div class="connect-time">
+                  <h4 class="connect-time-title">OPENING TIMES</h4>
+                  <p class="connect-time-text">Mon - Fri 08:00 to 22:00</p>
+                  <p class="connect-time-text">Sat - 09:00 to 20:00</p>
+                  <p class="connect-time-text">Sun - 12:00 to 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="connect-address">
+            <div class="connect-img">
+              <img src="../../assets/img/connect1.jpg" alt="" />
+              <div class="connect-desc">
+                <div class="connect-kingdom">
+                  <h4 class="connect-kingdom-title">UNITED KINGDOM</h4>
+                  <p class="connect-kingdom-text">Venice Beach, California</p>
+                  <p class="connect-kingdom-content">
+                    9219 Old Kingston Street South
+                  </p>
+                  <p class="connect-kingdom-content">El Monte, CA</p>
+                  <p class="connect-kingdom-content">91733</p>
+                </div>
+                <div class="connect-time">
+                  <h4 class="connect-time-title">OPENING TIMES</h4>
+                  <p class="connect-time-text">Mon - Fri 08:00 to 22:00</p>
+                  <p class="connect-time-text">Sat - 09:00 to 20:00</p>
+                  <p class="connect-time-text">Sun - 12:00 to 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================END CONNECT========================= -->
+
+    <!--================================ Sign up===================== -->
+    <section class="signup" data-aos="fade-up">
+      <div class="container">
+        <div class="signup-box">
+          <div class="signup-text">
+            <h3 class="signup-more">SIGN UP AND GET FREE COFFEE BAGS</h3>
+            <h2 class="signup-title">CoffeeShop updates</h2>
+          </div>
+          <form name="" action="#" class="signup-input">
+            <input type="text" placeholder="CUSTOMER@HSWTT1912.OI" />
+            <button class="signup-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--================================END Sign up===================== -->
+
+    <!-- ==================footer ============================-->
+    <footer class="footer" data-aos="fade-up">
+      <div class="container-product">
+        <div class="footer-box">
+          <div class="footer-col">
+            <p class="footer-title fz">CoffeeShop</p>
+            <p class="footer-content">SINCE 2022</p>
+            <p class="footer-since pd">CoffeeShopStyle Inc. © 2022</p>
+          </div>
+          <ul class="footer-col">
+            <h4 class="footer-title">Menu</h4>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Home</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Products</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">About</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">StyleGuide</a>
+            </li>
+            <li class="footer-item">
+              <a href="../../assets/html/contact.html" class="footer-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-col">
+            <h4 class="footer-title">Follow Us</h4>
+
+            <li class="footer-item">
+              <a
+                href="https://www.facebook.com/trong.nhan.3557440"
+                class="footer-link"
+                >Facebook</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Instagram</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Pinterest</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Twitter</a>
+            </li>
+          </ul>
+          <div class="footer-col">
+            <h4 class="footer-title">Contact.</h4>
+            <p class="footer-content">We’re Always Happy to Help</p>
+            <div class="footer-email">vn@hstt1912.oi</div>
+            <p class="footer-since">Powered by Webflow</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =======================END FOOTER====================================== -->
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/layout.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

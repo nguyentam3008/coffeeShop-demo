@@ -1,0 +1,302 @@
+// ====================MENU========================
+.menu {
+  margin: 100px 0px 125px 0px;
+  &-desc {
+    text-align: center;
+  }
+  &-title {
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+  &-text {
+    color: $color-text;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  &-btn {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    &-item {
+      outline: none;
+      background-color: transparent;
+      width: 100%;
+      display: block;
+      border: 1px solid #ececed;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.3s linear;
+      color: rgba(162, 95, 75, 0.6);
+    }
+    &-item:hover {
+      color: $color-brown;
+      border: 1px solid $color-brown;
+    }
+    // &-item:focus {
+    //   color: $color-brown;
+    //   border: 1px solid $color-brown;
+    // }
+  }
+}
+.active-btn {
+  color: $color-brown;
+  border: 1px solid $color-brown;
+}
+.pd-btn {
+  padding: 10px 16px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .menu {
+    &-btn {
+      flex-direction: row;
+      &-item {
+        width: calc(100% / 5 - 10px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .menu {
+    &-btn {
+      flex-direction: row;
+      &-item {
+        width: calc(100% / 5 - 10px);
+      }
+    }
+  }
+}
+
+// ===================================END slide============================
+
+// ================================MEnu================
+
+.product {
+  overflow: hidden;
+  &-listss {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &-img {
+    position: relative;
+    height: 380px;
+    &-add {
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      padding: 18px 24px;
+      width: 95%;
+      background-color: #fff;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s ease;
+      opacity: 0;
+      transition-delay: 0.1s;
+      color: $color-text;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+  &-img::before {
+    transition: all 0.2s ease;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &-img:hover::before {
+    background-image: linear-gradient(
+      180deg,
+      rgba(29, 31, 46, 0.1),
+      rgba(29, 31, 46, 0.1)
+    );
+  }
+  &-img:hover &-img-add {
+    bottom: -20px;
+    opacity: 1;
+  }
+  &-desc {
+    text-align: center;
+    margin-top: 10px;
+  }
+  &-name {
+    color: $color-text;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-price {
+    color: $color-brown;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .product-item {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .product-item {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+// ================================END MEnu================
+.slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+  gap: 20px;
+  &-img {
+    width: 100%;
+    height: 380px;
+  }
+  &-title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+  &-text {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  &-btn {
+    width: 100%;
+    display: inline-block;
+    padding: 18px 24px;
+    border-radius: 0px;
+    background-color: #1d1f2e;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: 0.2s ease-in;
+  }
+  &-btn:hover {
+    opacity: 0.9;
+  }
+  :is(&-next, &-prev) {
+    display: none;
+  }
+
+  &-dot {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+    bottom: -40px;
+  }
+  &-dot-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid $color-text;
+    cursor: pointer;
+  }
+}
+
+.silde {
+  &-content {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+  }
+}
+.active {
+  &-dot {
+    background-color: $color-text;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .slide {
+    &-img {
+      max-width: 100%;
+    }
+    position: relative;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row;
+    :is(&-next, &-prev) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      z-index: 100;
+      color: $color-text;
+      opacity: 0.6;
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+    &-next {
+      right: -18px;
+    }
+    &-prev {
+      left: 0;
+    }
+
+    &-btn {
+      max-width: 220px;
+    }
+    :is(&-next, &-prev):hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .slide {
+    gap: 60px;
+
+    &-prev {
+      left: 0;
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}

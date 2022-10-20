@@ -1,0 +1,70 @@
+.signup {
+  width: 100%;
+  position: relative;
+  background-color: #1d1f2e;
+  &-box {
+    padding: 80px 20px 85px;
+    text-align: center;
+  }
+  &-more {
+    display: block;
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &-title {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 50px;
+    color: #fff;
+  }
+  &-input > input {
+    caret-color: #fff;
+    display: block;
+    width: 100%;
+    border: 1px solid #333;
+    padding: 18px 24px;
+    background-color: #1d1f2e;
+    color: #cccccc;
+    transition: all 0.3s linear;
+  }
+  &-input > input:hover {
+    border: 1px solid #fafafa;
+  }
+  &-input:focus {
+    border: 1px solid #fafafa;
+  }
+  &-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    color: #1d1f2e;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .signup {
+    &-input {
+      @include flexCt;
+      gap: 20px;
+    }
+    &-input > input {
+      width: 36%;
+    }
+    &-btn {
+      text-align: center;
+      margin-top: unset;
+      width: 12%;
+    }
+  }
+}

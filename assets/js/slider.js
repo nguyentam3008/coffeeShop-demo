@@ -1,38 +1,17 @@
 // select Element
-const imgSrc = $(".person-img");
-const title = $(".title-center");
-const text = $(".slide-text");
-const content = $(".silde-content");
-const btn = $(".slide-btn");
-const prev = $(".slide-prev");
-const next = $(".slide-next");
-const dotElement = $(".slide-dot");
-const dotItem = $$(".slide-dot-item");
+const imgSrc = document.querySelector(".slide-img");
+const title = document.querySelector(".slide-title");
+const text = document.querySelector(".slide-text");
+const content = document.querySelector(".silde-content");
+const btn = document.querySelector(".slide-btn");
+const prev = document.querySelector(".slide-prev");
+const next = document.querySelector(".slide-next");
+const dotElement = document.querySelector(".slide-dot");
+const dotItem = document.querySelectorAll(".slide-dot-item");
+const sliderElement = document.querySelector(".slide");
 
 // starting item
 let currentIndex = 0;
-
-const sliders = [
-  {
-    id: 1,
-    text: "NEW ARTICLE IS LIVE",
-    src: "../img/cfshop1.jpg",
-    title:
-      "Health Check: why do I get a headache when I haven’t had my coffee?",
-    content:
-      "It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-    sliderBtn: "read the full story",
-  },
-  {
-    id: 2,
-    text: "NEW STORE OPENED",
-    src: "../img/cfshop3.jpg",
-    title: "We're in London",
-    content:
-      "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
-    sliderBtn: "read the full story",
-  },
-];
 
 const showSlider = () => {
   const item = sliders[currentIndex];

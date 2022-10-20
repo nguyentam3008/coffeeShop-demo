@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      in8tegrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>OUR MENU</title>
+  </head>
+  <body class="outmenu-page">
+    <div class="overplay"></div>
+    <div id="root">
+      <header>
+        <nav class="nav">
+          <a href="./index.html" class="nav-logo">CoffeeShop.</a>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="./index.html" class="nav-menu-link active-nav">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./Outmenu.html" class="nav-menu-link">Products</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./about.html" class="nav-menu-link">About</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./blog.html" class="nav-menu-link">Blog</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./formLogin.html" class="nav-menu-link">SignIn</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./contact.html" class="nav-menu-link">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav-sping">
+            <div class="nav-text">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <a href="#" class="nav-menu-link" id="cart-icon"> cart </a>
+              <div class="box-number">
+                <span class="number">0</span>
+              </div>
+            </div>
+          </ul>
+          <div class="nav-hamberger"></div>
+        </nav>
+        <div class="cart">
+          <div class="cart-box">
+            <h4 class="cart-title">Your Cart</h4>
+            <i class="fa-solid fa-xmark" id="cart-lose"></i>
+          </div>
+            <div class="cart-group">
+              <!-- render product in cart -->
+              <!-- <div class="cart-product">
+                <div class="cart-img">
+                  <img src="./assets/img/more0.jpg" alt="" />
+                </div>
+              <div class="cart-desc">
+                <p class="cart-name">Golden Designers Mug</p>
+                <p class="cart-price">$ 25 USD</p>
+                <p class="cart-delete">Remove</p>
+              </div>
+              <div class="cart-input">
+                <div class="cart-quantity"></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="cart-total">
+          <div class="cart-total-title">Subtotal:</div>
+          <button class="cart-btn">Continue to checkout</button>
+        </div>
+      </header>
+      <!-- ===========================================MENU========================================= -->
+      <section class="menu" data-aos="fade-up">
+        <div class="container-product">
+          <div class="menu-desc">
+            <p class="menu-title">Our Products</p>
+            <p class="menu-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="menu-btn">
+              <button
+                class="menu-btn-item pd-btn filter-btn active-btn"
+                type-food="all"
+              >
+                all products
+              </button>
+              <button class="menu-btn-item pd-btn filter-btn" type-food="coffee">
+                coffee mugs
+              </button>
+              <button class="menu-btn-item pd-btn filter-btn" type-food="others">
+                others
+              </button>
+              <button class="menu-btn-item pd-btn filter-btn" type-food="premium">
+                premium
+              </button>
+              <button class="menu-btn-item pd-btn filter-btn" type-food="tea">
+                tea mugs
+              </button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="slide-img">
+              <img src="./assets/img/cfshop1.jpg" alt="" class="person-img" />
+            </div>
+            <div class="slide-desc">
+              <h1 class="slide-title">NEW ARTICLE IS LIVE</h1>
+              <p class="slide-text">
+                Health Check: why do I get a headache when I haven’t had my
+                coffee?
+              </p>
+              <p class="silde-content">
+                It is a paradisematic country, in which roasted parts of
+                sentences fly into your mouth.
+              </p>
+              <a href="#" class="slide-btn"> read the full story </a>
+              <div class="slide-prev"><</div>
+              <div class="slide-next">></div>
+            </div>
+            <div class="slide-dot">
+              <span class="slide-dot-item active-dot"></span>
+              <span class="slide-dot-item"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===========================================ENDMENU========================================= -->
+      <!-- ===========================================PRODUCT========================================= -->
+      <section class="product">
+        <div class="container-product">
+          <div class="product-listss" data-aos="fade-up">
+            <!-- render here -->
+          </div>
+        </div>
+      </section>
+      <!-- ===========================================END PRODUCT========================================= -->
+
+      <!-- ============================SING UP=========================================== -->
+      <section class="signup" data-aos="fade-up">
+        <div class="container">
+          <div class="signup-box">
+            <div class="signup-text">
+              <h3 class="signup-more">SIGN UP AND GET FREE COFFEE BAGS</h3>
+              <h2 class="signup-title">CoffeeShop updates</h2>
+            </div>
+            <form name="" action="#" class="signup-input">
+              <input type="text" placeholder="CUSTOMER@HSWTT1912.OI" />
+              <button class="signup-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ============================END SING UP=========================================== -->
+      <!-- =======================FOOTER====================================== -->
+      <footer class="footer" data-aos="fade-up">
+        <div class="container-product">
+          <div class="footer-box">
+            <div class="footer-col">
+              <p class="footer-title fz">CoffeeShop</p>
+              <p class="footer-content">SINCE 2022</p>
+              <p class="footer-since pd">CoffeeShopStyle Inc. © 2022</p>
+            </div>
+            <ul class="footer-col">
+              <h4 class="footer-title">Menu</h4>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Home</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Products</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">About</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">StyleGuide</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="footer-col">
+              <h4 class="footer-title">Follow Us</h4>
+
+              <li class="footer-item">
+                <a
+                  href="https://www.facebook.com/trong.nhan.3557440"
+                  class="footer-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Instagram</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Pinterest</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Twitter</a>
+              </li>
+            </ul>
+            <div class="footer-col">
+              <h4 class="footer-title">Contact.</h4>
+              <p class="footer-content">We’re Always Happy to Help</p>
+              <div class="footer-email">vn@hstt1912.oi</div>
+              <p class="footer-since">Powered by Webflow</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- =======================END FOOTER====================================== -->
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/outMenu.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
